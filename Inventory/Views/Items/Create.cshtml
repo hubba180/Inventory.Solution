@@ -1,0 +1,16 @@
+@model Inventory.Models.Item
+
+<h4>Add a new item</h4>
+
+@using (Html.BeginForm())
+{
+  @Html.LabelFor(model => model.Description)
+  @Html.TextBoxFor(model => model.Description)
+  @Html.LabelFor(model => model.Type)
+  @Html.TextBoxFor(model => model.Type)
+  @Html.LabelFor(model => model.Value)
+  @Html.TextBoxFor(model => model.Value)
+  <input type = "submit" value ="Add new item" />
+}
+<p>@Html.ActionLink("Show all items", "Index")</p>
+<p>@Html.ActionLink("Home", "Index", "Home")</p>
