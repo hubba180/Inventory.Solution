@@ -1,0 +1,17 @@
+@using Inventory.Models
+@using System.Collections.Generic;
+
+
+<h4>Category List</h4>
+
+@if (Model.Count == 0)
+{
+  <p>You have no categories yet</p>
+}
+
+<ul>
+@foreach (category item in Model)
+{
+  <li>@item.Name</li>
+}
+</ul>

@@ -1,3 +1,4 @@
+
 namespace Inventory.Models
 {
   public class Item
@@ -6,5 +7,6 @@ namespace Inventory.Models
     public string Type { get; set; }
     public string Description { get; set; }
     public string Value { get; set; }
+    public int categoryId { get; set; }
   }
 }
